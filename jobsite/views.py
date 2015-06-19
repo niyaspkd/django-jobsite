@@ -77,8 +77,9 @@ def register_success(request):
 
 
 def home(request,job_id):
+ if request.user:
   job=Jobs.objects.get(id=job_id)
-
+  
   if request.method == "POST":
     form = UserDataForm(request.POST)
     if form.is_valid():
