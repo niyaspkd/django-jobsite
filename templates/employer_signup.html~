@@ -1,0 +1,10 @@
+<form action="/home/" method="post">
+    {% csrf_token %}
+     {{ form.non_field_errors }
+	 {{ form.as_p }}
+     {{ form.name.errors }}
+
+     
+    <input type="submit" value="Submit" />
+
+</form>

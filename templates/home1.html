@@ -1,0 +1,107 @@
+
+
+{% for job in job_detail %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<title>Sticky notes using CSS3 and Google Fonts (Step 2)</title>
+<link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css"> 
+
+<style type="text/css">
+.navbar {
+    position: fixed !important;
+    top: 0px;
+    width: 940px;
+}
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:3em;
+  background:#666;
+  color:#fff;
+}
+h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+  margin-top: 50px
+}
+
+ul li{
+  float:left;
+  margin-left: 2px;
+  padding: 5px;
+  display: block; 
+}
+a:hover { 
+    background-color: yellow;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+ul li h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+</style>
+</head>
+<body>  
+  <ul>
+    <li>
+      <a href="/home/{{job.id}}/">
+        <h2>{{job.title}}</h2>
+        <p>{{job.location}}</p>
+        <p>{{job.time}}</p>
+      </a>
+    </li>
+     <li>
+    
+    
+    </li>
+  </ul>
+  <div class="span12">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+     
+    </div>
+  </div>
+  </nav>
+<body>
+</html>
+{% endfor %}

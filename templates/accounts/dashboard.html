@@ -1,0 +1,11 @@
+<h2>Hi {{user}} </h2>you are in the dashboard as role
+
+ {% if user.role == '1' %}
+ <b>Employer</b>
+ {% elif user.role == '2' %}
+ <b>Employee</b>
+ {% endif %}
+
+<div>
+	<a href="/signout/">Signout</a>
+</div>

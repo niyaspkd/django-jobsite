@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<title>Sticky notes using CSS3 and Google Fonts (Step 2)</title>
+<link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css"> 
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Clojure/Lisp Programmer — Hasjob</title>
+  <meta name="DC.title" content="Clojure/Lisp Programmer" />
+  <meta property="og:title" content="Clojure/Lisp Programmer" />
+  <meta name="description" content="Concur, Bangalore, Full-time employment, Programming" />
+  <meta property="og:description" content="Concur, Bangalore, Full-time employment, Programming" />
+  <meta name="author" href="/humans.txt" />
+  <meta name="csrf-token" content="1434281839##4f3e7e8c5bd8b54fcfa5f2c8a9941e7bd0d91b46" />
+  <meta name="google-site-verification" content="UGsppmbAZzOvc5j5J7fhgsBnS2XAY9B6Dmz8iuGRgCQ" />
+  <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href="https://hasjob.co/concur.com/7pf3b" />
+    <meta property="og:url" content="https://hasjob.co/concur.com/7pf3b" />
+
+    <link rel="image_src" href="https://static.hasjob.co/static/img/logo-star.png" />
+  <meta property="og:image" content="https://static.hasjob.co/static/img/logo-star.png" />
+  <meta name="referrer" content="always" />
+
+  <!-- Included CSS Files -->
+    <link rel="stylesheet" type="text/css" href="https://static.hasgeek.co.in/static/gen/baseframe-bs3-css.css?3bf8d8e5" />
+    <link rel="stylesheet" type="text/css" href="https://static.hasgeek.co.in/static/gen/jquery-nouislider-css.css?72759ec6" />
+    <link rel="stylesheet" type="text/css" href="https://static.hasgeek.co.in/static/gen/baseframe-firasans-css.css?3ec5d4a1" />
+    <link rel="stylesheet" type="text/css" href="https://static.hasgeek.co.in/static/gen/fontawesome-css-gte-4-3-0.css?58d88a1b" />
+    <link rel="stylesheet" type="text/css" href="https://static.hasgeek.co.in/static/gen/bootstrap-multiselect-css.css?3df1110d" />
+  <link rel="stylesheet" type="text/css" href="https://static.hasjob.co/static/css/baseframe-packed.css?825f3687" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,600italic,400,600" />
+  <script src="https://static.hasjob.co/_baseframe/js/modernizr.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=McLaren" />
+  <link rel="stylesheet" type="text/css" href="//code.cdn.mozilla.net/fonts/fira.css">
+  <!-- Feed and search -->
+  <link rel="alternate" type="application/atom+xml" title="All jobs – Hasjob" href="/feed" />
+  <link rel="search" type="application/opensearchdescription+xml" href="https://static.hasjob.co/static/opensearch.xml" title="Hasjob Search" />
+  
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hasjob" />
+
+
+<style type="text/css">
+
+
+.navbar {
+    position: fixed !important;
+    top: 0px;
+    width: 1250px;
+    font-size:100%;
+    padding-left: :0px;
+}
+*{
+  margin:0;
+  padding:0;
+}
+
+
+body{
+  font-family:arial,sans-serif;
+   background-color:"#E6E6FA"; 
+  margin:3em;
+  background:#666;
+  color:#fff;
+}
+h2,p{
+  font-size:10%;
+  font-weight:bold;
+}
+ul,li{
+  list-style:none;
+  margin-top: 50px;
+  
+}
+
+ul li{
+  float:left;
+  margin-left: 2px;
+  padding: 10px;
+  display: block;
+   
+}
+a:hover { 
+    background-color: yellow;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:10px 10px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 10px 10px 7px rgba(33,33,33,.7);
+  box-shadow: 10px 10px 10px rgba(33,33,33,.7);
+}
+ul li h2{
+  font-size:90%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:70%;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+</style>
+</head>
+<body>  
+{% for job in job_detail %}
+
+  <ul>
+    <li>
+      <a href="/home/{{job.id}}/">
+        <h2>{{job.title}}</h2>
+        <p>{{job.location}}</p>
+        <p>{{job.time}}</p>
+      </a>
+    </li>
+     <li>
+    
+    
+    </li>
+  </ul>
+{% endfor %}
+
+  
+<nav class="navbar navbar-default ">
+  <div class="container">
+  <div class="row">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MYJobs</a>
+    </div>
+    <div class="navbar-right">
+
+     
+        
+       <form action="/signin/" >
+    <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
+    </div>
+    </div> 
+    </div>
+  </div>
+
+
+<body>
+</html>
+
+    
