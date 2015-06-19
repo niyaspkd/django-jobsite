@@ -17,6 +17,6 @@ urlpatterns = patterns('',
     url(r'^home/$', 'jobsite.views.jobs', name='jobs'),
     url(r'^apply/$', 'jobsite.views.employer', name='employer'),
     url(r'^post/$', 'jobsite.views.post_job', name='post_job'),
-     url(r'^search/$', 'jobsite.views.search_titles'),
+
    
 )

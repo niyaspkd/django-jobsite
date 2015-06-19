@@ -133,11 +133,3 @@ def employer(request):
  if request.user.role=='1':  
   appliers=Apply.objects.all()
  return render_to_response("apply.html",{"apply":appliers})
-
-def search_titles(request):
-    if request.POST:
-        search_text = request.POST['search_text']
-    else:
-        search_text = ''
-    articles = Jobs.objects.filter(title__contains=search_text)
-    return render(request, 'ajax_search.html', {'articles': articles})
